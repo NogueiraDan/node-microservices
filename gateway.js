@@ -4,7 +4,7 @@ const axios = require('axios');
 const cors = require('cors');
 
 // Service's URL
-const userMicroserviceUrl = 'http://localhost:3000';
+const userMicroserviceUrl = 'http://localhost:3001';
 const productMicroserviceUrl = 'http://127.0.0.1:8000';
 
 app.use(cors());
