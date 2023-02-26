@@ -1,2 +1,2 @@
 # Microserviços com NodeJS
-### Aplicação simples usando dois microserviços (Um com Node/Express e outro com FastAPI usando um Gateway de API para receber as requisições e distribuir para o microserviço responsavel. 
+### Aplicação simples usando dois microserviços (Um com Node/Express e outro com FastAPI), e contando com um Gateway para receber as requisições e distribui-lás para o microserviço responsavel. 
