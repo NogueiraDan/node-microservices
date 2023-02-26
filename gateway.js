@@ -10,7 +10,9 @@ const productMicroserviceUrl = 'http://127.0.0.1:8000';
 app.use(cors());
 
 app.get('/', (req, res)=>{
-  res.send({message: "You're in a Main Gateway of API's"})
+  res.send({message: 
+    "You're in a Main Gateway of API's. Paths:'/users','/prodcuts'"
+  })
 })
 // Microservice of Users
 app.get('/users', async (req, res) => {
