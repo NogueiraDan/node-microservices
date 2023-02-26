@@ -9,12 +9,18 @@ function App() {
   useEffect(() => {
     axios
       .get("http://localhost:5000/users")
-      .then((response) => setUsers(response.data))
+      .then((response) => {
+        setUsers(response.data);
+        
+      })
       .catch((error) => console.error(error));
 
     axios
       .get("http://localhost:5000/products")
-      .then((response) => setProducts(response.data))
+      .then((response) => {
+        setProducts(response.data);
+        
+      })
       .catch((error) => console.error(error));
   }, []);
 
