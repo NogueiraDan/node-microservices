@@ -5,8 +5,9 @@ app = FastAPI()
 @app.get("/products")
 async def read_products():
     products = [
-        { "id": 1, "name": "Product 1" },
-        { "id": 2, "name": "Product 2" },
+        { "id": 1, "name": "Smartphone" },
+        { "id": 2, "name": "SmartTV" },
+        { "id": 3, "name": "Notebook" },
     ]
 
     return products
