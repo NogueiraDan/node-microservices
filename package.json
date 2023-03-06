@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon gateway.js",
-    "dev": "concurrently \"nodemon gateway.js\" \"cd user_service & nodemon service.js\" \"cd products_service & uvicorn main:app --reload\""
+    "dev": "concurrently \"nodemon gateway.js\" \"cd user_service & nodemon service.js\" \"cd products_service & uvicorn main:app --reload\" \"cd client & npm start\""
   },
   "keywords": [],
   "author": "",
