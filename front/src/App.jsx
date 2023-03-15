@@ -6,12 +6,19 @@ function App() {
   const [users, setUsers] = useState([]);
   const [products, setProducts] = useState([]);
 
+  const handleShowDetail = () => {
+    axios
+      .get("http://localhost:5000/userapidetail")
+      .then((res) => {
+        alert(JSON.stringify(res.data));
+      })
+      .catch((err) => alert(err));
+  };
   useEffect(() => {
     axios
       .get("http://localhost:5000/users")
       .then((response) => {
         setUsers(response.data);
-        
       })
       .catch((error) => console.error(error));
 
@@ -19,7 +26,6 @@ function App() {
       .get("http://localhost:5000/products")
       .then((response) => {
         setProducts(response.data);
-        
       })
       .catch((error) => console.error(error));
   }, []);
@@ -34,6 +40,7 @@ function App() {
             <li key={user.id}>{user.name}</li>
           ))}
         </ul>
+        <button onClick={handleShowDetail}>Reveal detail service</button>
       </div>
 
       <div className="App__products">
