@@ -38,6 +38,17 @@ app.get('/userapidetail', async (req, res)=>{
     
   }
 })
+
+app.get('/books', async (req, res)=>{
+  try {
+    const response = await axios.get(`${userURl}/books`);
+    res.status(200).send(response.data)
+  } catch (err) {
+    console.log(err)
+    res.sendStatus(500)
+    
+  }
+})
 /* END OF USER MICROSERVICES  */
 
 
