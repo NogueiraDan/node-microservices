@@ -11,7 +11,7 @@
 
 .App__users{
   margin: 20px 0;
-  padding: 20px;
+  padding: 40px;
   width: 50%;
   height: auto;
   border-radius: 10px;
@@ -21,7 +21,7 @@
 
 .App__products{
   margin: 20px 0;
-  padding: 20px;;
+  padding: 40px;;
   width: 50%;
   height: auto;
   border-radius: 10px;
